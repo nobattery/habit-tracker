@@ -1,17 +1,21 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./app";
+import "@fortawesome/fontawesome-free/js/all.js";
+{
+  /* yarn add @fortawesome/fontawesome-free */
+}
 
+{
+  /*StrictMode 이용시 개발 중 에러 메세지가 바로 표시된다.*/
+}
+{
+  /*simpleHabit 로 변경시 ReactHook예제로 연결된다.*/
+}
 ReactDOM.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
